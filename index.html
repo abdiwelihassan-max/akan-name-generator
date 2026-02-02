@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akan Name Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="generate-card">
+
+  <h1>Generate Your Akan Name!</h1>
+
+  <div class="generator-container">
+
+    <input type="number" id="day" placeholder="Day" min="1" max="31" required />
+
+    <input type="number" id="month" placeholder="Month" min="1" max="12" required />
+
+    <input type="number" id="year" placeholder="Year" min="1900" max="2027" required />
+
+    <select id="gender" required>
+      <option value="">Select Gender</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <button id="generate">Get Akan Name</button>
+
+  </div>
+
+  <!-- Result will appear here -->
+  <div id="result"></div>
+
+  <div class="home-button-container">
+    <a href="index.html">GO BACK TO HOME PAGE</a>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
