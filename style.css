@@ -51,7 +51,7 @@ h1 {
 .generator-container select:focus {
   border-color: #ff758c;
   outline: none;
-  box-shadow: 0 0 0 2px rgba(255, 117, 140, 0.2);
+  box-shadow: 0 0 0 2px rgba(110, 69, 76, 0.2);
 }
 
 /* Button */
