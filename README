@@ -16,7 +16,7 @@ This project was built to practice:
 - User input handling  
 - Implementing a cultural-based algorithm  
 
-The app calculates the **day of the week** a user was born and assigns the corresponding Akan name.
+The app calculates the "day of the week" a user was born and assigns the corresponding Akan name.
 
 ---
 
