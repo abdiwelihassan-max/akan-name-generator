@@ -31,20 +31,20 @@ The app calculates the **day of the week** a user was born and assigns the corre
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 The app uses a mathematical formula to determine the day of the week:
 
 
 ---
 
-## 🌍 Cultural Significance
+##  Cultural Significance
 
 Akan naming traditions originate from Ghana. The day of birth determines the name given to a child and is believed to influence personality and destiny. This project celebrates and digitizes that cultural practice.
 
 ---
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 - Functions and parameters  
 - Arrays and objects  
