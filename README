@@ -27,7 +27,7 @@ The app calculates the "day of the week" a user was born and assigns the corresp
 - ✅Validates user input (day, month, year, gender)  
 - 🌙Proper "leap year handling" 
 -  Instant result display  
-- 🚫 Error alerts for invalid entries  
+- 🚫Error alerts for invalid entries  
 
 ---
 
