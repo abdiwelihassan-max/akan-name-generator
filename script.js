@@ -57,7 +57,8 @@ function isValidDate(day, month, year, gender) {
     return false;
   }
 
-  if (year < 1900 || year > 2026) {
+  const currentYear = new Date().getFullYear();
+  if (year < 1900 || year > currentYear) {
     alert("Enter a valid year");
     return false;
   }
@@ -66,7 +67,7 @@ function isValidDate(day, month, year, gender) {
 }
 
 
-// Akan formula
+// Zeller's Congruence (corrected)
 function calculateDay(CC, YY, MM, DD) {
   const term1 = Math.floor(CC / 4) - 2 * CC - 1;
   const term2 = Math.floor((5 * YY) / 4);
@@ -87,10 +88,19 @@ function getAkanName() {
 
   if (!isValidDate(day, month, year, gender)) return;
 
-  const CC = Math.floor(year / 100);
-  const YY = year % 100;
+  // Month correction for Zeller
+  let m = month;
+  let y = year;
 
-  const dayIndex = calculateDay(CC, YY, month, day);
+  if (m < 3) {
+    m += 12;
+    y -= 1;
+  }
+
+  const CC = Math.floor(y / 100);
+  const YY = y % 100;
+
+  const dayIndex = calculateDay(CC, YY, m, day);
   const akanName = gender === "male" ? maleNames[dayIndex] : femaleNames[dayIndex];
 
   document.getElementById("result").innerHTML = `
@@ -98,4 +108,5 @@ function getAkanName() {
     <p>You were born on ${days[dayIndex]}</p>
   `;
 }
+
 
